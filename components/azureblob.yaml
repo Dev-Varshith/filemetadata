@@ -11,4 +11,4 @@ spec:
     - name: containerName
       value: "testcontainer"
     - name: azureTenantId
-      value: "d5d2540f-f60a-45ad-86a9-e2e792ee6669"
+      value: "env:AZURE_TENANT_ID"
