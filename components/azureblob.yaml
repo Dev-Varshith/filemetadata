@@ -1,0 +1,14 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: azureblob
+spec:
+  type: bindings.azure.blobstorage
+  version: v1
+  metadata:
+    - name: accountName
+      value: "stiat7lxif"
+    - name: containerName
+      value: "testcontainer"
+    - name: azureTenantId
+      value: "d5d2540f-f60a-45ad-86a9-e2e792ee6669"
