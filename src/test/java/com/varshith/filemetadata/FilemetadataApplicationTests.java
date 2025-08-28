@@ -1,13 +1,14 @@
 package com.varshith.filemetadata;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootTest
-class FilemetadataApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
+@SpringBootApplication
+public class FilemetadataApplicationTests {
+    public static void main(String[] args) {
+        SpringApplication
+                .from(FilemetadataApplication::main)
+                .with(DaprTestContainersConfig.class)
+                .run(args);
+    }
 }

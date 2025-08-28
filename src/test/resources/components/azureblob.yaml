@@ -1,0 +1,18 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: azureblob
+spec:
+  type: bindings.azure.blobstorage
+  version: v1
+  metadata:
+    - name: accountName
+      value: devstoreaccount1
+    - name: accountKey
+      value: Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OHPYTz1h6VbVhCU6IFSUFI4Z4x2I6tq/K1SZFPTOtr/KBHBeksoGMGw==
+    - name: containerName
+      value: testcontainer   # Use the same container name as in your tests
+    - name: endpoint
+      value: http://localhost:10000/devstoreaccount1
+    - name: decodeBase64
+      value: true

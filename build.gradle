@@ -23,12 +23,18 @@ dependencies {
 	implementation 'io.dapr:dapr-sdk:1.15.0'
 	implementation 'io.dapr:dapr-sdk-springboot:1.15.0'
 
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
+    testImplementation 'org.testcontainers:testcontainers:1.21.3'
+    testImplementation 'org.testcontainers:junit-jupiter:1.21.3'
+    testImplementation 'com.azure:azure-storage-blob:12.31.2'
+    testImplementation 'io.dapr:testcontainers-dapr:0.15.1'
+    testImplementation 'org.springframework.boot:spring-boot-testcontainers:3.5.5'
+
 
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }

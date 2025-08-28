@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class FilemetadataApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FilemetadataApplication.class, args);
+        SpringApplication.run(FilemetadataApplication.class, args);
 	}
 
 }
